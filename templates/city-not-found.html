@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidade não Encontrada</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
+</head>
+<body>
+    
+</body>
+    <h1>Cidade Não Encontrada<h1>
+    <h2> Tentar Novamente?</h2>
+    <form action="/weather">
+        <input type="text" name="city" id="city" placeholder="Insira a Cidade" />
+        <button type="submit">Enviar</button>
+    </form>
+</html>
