@@ -1,8 +1,11 @@
+/* Main title styling */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 body {
     padding: 2rem;
@@ -16,8 +19,41 @@ body {
     font-size: 2rem;
 }
 
-input, button {
+
+/* Status and temperature text styling */
+.status, .feels-like {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Temperature and feels-like value styling */
+.temp {
     font-size: 2rem;
-    padding: 1rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Centering the form and button */
+.form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input, button {
+    font-size: 1.5rem;  /* Reduce font size */
+    padding: 0.5rem;    /* Reduce padding */
     border-radius: 10px;
+}
+
+.submit-btn {
+    background-color: #ff6600; /* Background color */
+    color: white;              /* Text color */
+}
+
+.submit-btn:hover {
+    background-color: #e65c00; /* Hover color */
 }

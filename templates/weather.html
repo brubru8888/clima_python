@@ -6,15 +6,16 @@
     <title>{{ title }} Clima</title>
     <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
 </head>
-<body>
     
-</body>
-    <h1>Clima de {{ title }}<h1>
-    <p>{{ status }} com temperatura de {{temp}} &deg;</p>
-    <p>Sensação térmica de {{feels_like}} &deg;</p>
+<body>
+    <h1>Clima de {{ title }}</h1>
+    <p class="status">{{ status }} com temperatura de <span class="temp">{{temp}} &deg;</span></p>
+    <p class="feels-like">Sensação térmica de <span class="temp">{{feels_like}} &deg;</span></p>
 
-    <form action="/weather">
+    <form action="/weather" class="form">
         <input type="text" name="city" id="city" placeholder="Insira a Cidade" />
-        <button type="submit">Enviar</button>
+        <button type="submit" class="submit-btn">Enviar</button>
     </form>
 </body>
+
+</html>
