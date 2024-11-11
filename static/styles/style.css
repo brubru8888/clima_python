@@ -1,11 +1,8 @@
-/* Main title styling */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     padding: 2rem;
@@ -18,7 +15,6 @@ body {
     gap: 2rem;
     font-size: 2rem;
 }
-
 
 /* Status and temperature text styling */
 .status, .feels-like {
